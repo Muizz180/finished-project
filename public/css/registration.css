@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+    font-size: 25px;
+}
+
+html, body{
+    height: 100%;
+    min-height: 100vh;
+    background-color: whitesmoke;
+}    
+
+form{
+    width:  500px;
+    margin: auto;
+    padding-bottom: 12px;
+
+}
+h1{
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(13, 13, 233);
+}
+label, input, .error, select, fieldset {
+    display: block;
+    margin: 0 0 10px 0;
+}
+.error{
+    color: red;
+    font-size: 12px;
+}
+
+input[type = "text"], input[type = "number"], input[type = "password"], input[type = "email"]   {
+    border-radius: 12px;
+    border: 2px solid  rgb(2, 63, 63); 
+    width: 100%;
+}
+
+input[type = "submit"]{
+    color: rgb(245, 247, 248);
+    width: 100%;
+    background-color: rgb(2, 63, 63);
+    border-radius: 30px;
+    border: 0ch;
+}
+
+.login, a{
+    font-size: 0.75rem;
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(4, 100, 4);
+}
+
+
+h2{
+    color: rgb(13, 13, 233);
+}
+
+
+input[type = "submit"]:hover{
+    color: rgb(7, 7, 4);
+    background-color: transparent;
+    border: 2px solid black;
+    
+}
+
+input[type = "checkbox"]{
+    margin-left: 0;
+}
+
+select{
+    width: 100%;
+    border-radius: 12px;
+    border: 2px solid rgb(2, 63, 63);
+}
+
+/* Extra small devices (phones, portrait mode) */
+@media screen and (max-width: 576px) {
+    *{
+        font-size: 13px;
+    }
+
+    
+    form{
+        width: 320px;
+    }
+}
+
+/* Small devices (tablets, portrait mode) */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    *{
+        font-size: 16px;
+    }
+
+    
+    form{
+        width: 400px;
+    }
+
+   
+}
+
+/* Medium devices (small laptops) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    *{
+        font-size: 19px;
+    }
+
+    
+    form{
+        width: 440px;
+    }
+}
+
+/* Large devices (laptops and desktops) */
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+    *{
+        font-size: 22px;
+    
+    }
+
+    form{
+        width: 470px;
+    }
+}

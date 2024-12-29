@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Langing page</title>
+    <link rel="stylesheet" href="/css/landing page .css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+               <div class="logo">
+                <a href="#display"><img src="/images/logo.png" alt=" logo"> <p>RUFAYDAH MATERNITY HOME </p></a>
+               
+            </div>
+            <div class="about">
+                <a href="#about">About us</a>
+                <a href="#service"> Service</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="login">
+                <div class="dropdown_login">
+                <a class="login_btn">Log in</a>
+                <div class="dropdown_login_content">
+                    <a href="/auth/patientLogin">Patient</a>
+                    <a href="/auth/doctorLogin">Doctor</a>
+                </div>
+                </div>
+                <div class="dropdown_start">
+                <button class="start_btn" id="start_btn">Get started</button>
+                <div class="dropdown_start_content" >
+                    <a href="/auth/patientRegister">Patient</a>
+                    <a href="/auth/doctorRegister">Doctor</a>
+                </div>
+                
+                </div>
+            </div>
+   </nav>
+   
+   <main>
+    
+        <div class="display" id="display">
+            <div class="content_display">
+            <h1>
+                Revolutionize Healthcare, Anytime, Anywhere
+            </h1>
+            <p>
+                Book appointments, get personalized care, and video consultations all from your devices. Join <b>Rufaydah marternity home</b> HOME and redefine your healthcare experience.
+            </p>
+            <a href="#start_btn" class="start">Get started</a>
+            </div>
+            <img src="/images/doctor.png" alt="doctor">
+        </div>
+    
+        <div class="service_background">
+            <div class="service" >
+                <div class="content_1" id="about">
+                    <div>
+                        <h2>Welcome to Rufaydah marternity home: Your Gateway to Seamless Healthcare</h2>
+                        <p>At Rufaydah maternity home, we're transforming the way you access healthcare by bringing it to the palm of your hand. Whether you need a quick consultation, want to book an appointment with a specialist, or find the nearest hospital in emergencies, TeleMed is here to connect you with the care you need, whenever and wherever you need it.</p>
+                    </div>
+                </div>
+                <div class="content_2" id="service">
+                    <div>
+                        <h2>Connect with Top Doctors Instantly</h2>
+                        <p><b>On-demand Healthcare:</b> Say goodbye to long wait times and travel stress. TeleMed connects you directly with top medical professionals around the clock. Simply open the app, select your preferred doctor, and book a virtual or in-person appointment with ease.</p>
+                    </div>
+                    <img src="/images/phone.png" alt="phone">
+                </div>
+                <div class="content_3">
+                    <img src="/images/location.png" alt="location">
+                    <div>
+                        <h2>Find Nearby Hospitals in Just a Tap</h2>
+                        <p>Location-based Assistance: In an emergency, every second counts. This teleMed’s provides advanced location services help you find the closest hospitals or clinics, providing real-time navigation to ensure you reach the right place quickly and efficiently.</p>
+                    </div>
+                </div>
+                <div class="content_4">
+                    <div>
+                        <h2>Comprehensive Health Management</h2>
+                        <p>From keeping track of your appointments to managing prescriptions, TeleMed simplifies every aspect of your healthcare journey:
+                            <ul>
+                                <li><b>Appointment Scheduling:</b> Effortlessly book, reschedule, or cancel appointments with a few taps.</li>
+                                <li><b>Prescription Management:</b> Have prescriptions sent directly to your pharmacy or delivered to your door.</li>
+                                <li><b>Health Records at Your Fingertips:</b> Access your medical history, test results, and other vital information from anywhere</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <img src="/images/laptop.png" alt="platform">
+                </div>
+                <div class="content_5">
+                    <img src="/images/why.png" alt="why">
+                    <div>
+                        <h2>Why Choose TeleMed?</h2>
+                        <p>
+                            <ul>
+                                <li><b>Convenience:</b> Access care from home, work, or on the go.</li>
+                                <li><b>Global Coverage:</b> Whether you’re at home or traveling, this teleMed is accessible worldwide. </li>
+                                <li><b>Secure and Confidential:</b> Your health data is safeguarded with top-notch security protocols, ensuring privacy and peace of mind. </li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+   <footer>
+    <div class="logo">
+    <img src="/images/logo.png" alt=" logo">
+    <p>RUFAYDAH MATERNITY HOME </p>
+    </div>
+    <hr>
+    <div class="contact" id="contact">
+        <div class="phone">
+            <p><i class="bx bxs-phone-call"></i> Contact</p>
+            <ol>
+                <li> +234 3451 3456 123</li>
+                <li> +234 3452 1234 123</li>
+                <li>+234 2345 7890 123</li>
+            </ol>
+        </div>
+        <div class="copyright">
+            <p class="p">Copyright</p>
+            
+            <p><i class="bx bx-copyright"  ></i>rufydahmarternityhome. All right reserved</p>
+        </div>
+        <div class="sociallink">
+            <p><i class="bx bx-phone" ></i> Social media link</p>
+            <ol>
+                <li> <i class="bx bxl-facebook-circle" style="color:rgb(61, 61, 255);" ></i> rufydahmarternityhome</li>
+                <li> <i class="bx bxl-gmail" style="color:rgb(247, 38, 38);"></i> rufydahmarternityhome@gmail.com</li>
+                <li> <i class="bx bxl-instagram" style="color: gray;" ></i> rufydahmarternityhome</li>
+            </ol>
+        </div>
+    </div>
+   </footer>
+
+   <script>
+
+    const dropdown = document.querySelector('.dropdown_start_content');
+    document.querySelector('.start').addEventListener('click', (e)=>{
+        e.stopPropagation();
+       if (dropdown.style.display === 'none') {
+        dropdown.style.display = 'block'; 
+        } else {
+            dropdown.style.display = 'none'; 
+    }
+    });
+
+    document.querySelector('.start_btn').addEventListener('click', (e)=>{
+        e.stopPropagation();
+       if (dropdown.style.display === 'none') {
+        dropdown.style.display = 'block'; 
+        } else {
+            dropdown.style.display = 'none'; 
+    }
+    });
+
+    document.addEventListener('click', () => {
+    if (dropdown.style.display === 'block') {
+        dropdown.style.display = 'none'; 
+    }
+
+
+});
+   </script>
+</body>
+</html>    
+ 
+             
+

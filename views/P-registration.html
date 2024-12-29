@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="/css/registration.css">
+</head>
+<body>
+    <div>
+        <h1>Patient registration form</h1> 
+        <form id="P-registrationForm">
+            <label for="username">Name:</label>
+            <input type="text"  name="username" id="username" required>
+           
+
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" required>
+           
+     
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required>
+           
+
+            <label for="confirmpassword">Confirm password:</label>
+            <input type="password" id="confirmpassword" required>
+            <span id="confirmpasswordError" class="error"></span>
+
+            <label for="t&c">Terms and condition:</label>
+            <input type="checkbox" id="t&c" >
+            <span id="messageError" class="error"></span>
+
+            <input type="submit" value="Register"> 
+            <p class="login">Already has an account? <a href="/auth/patientLogin">Login</a></p>
+        </form>
+    </div> 
+    <script src="/js/P-registration.js"></script> 
+</body>
+</html>
+    
+   
+

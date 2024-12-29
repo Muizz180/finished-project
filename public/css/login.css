@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+    font-size: 30px;
+
+}
+
+html, body{
+    height: 100%;
+}
+body{ 
+    min-height: 100vh; 
+    background-color: #4682B4; 
+    overflow: hidden;
+    background-image: url();
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+div{
+    
+    border-radius: 10px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 2px solid black;
+    padding: 11px 18px 11px 18px;
+    
+    
+}    
+
+
+
+input, .error{
+    display: block;
+   
+    border-radius: 5px;
+    border: none;
+}
+ 
+
+h1{
+   
+    font-size: 2rem;
+    text-align: center;
+}
+
+.error{
+    color: rgb(27, 1, 121);
+    font-size: 12px;
+   
+}
+
+input[type = "submit"]{
+    width: 90%;
+    margin-bottom: 2px;
+    background-color: rgb(119, 250, 119);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+input[type = "submit"]:hover{
+   color: white;
+   width: 100%;
+
+}
+
+input[type= "password"]{
+    margin-bottom: 45px;
+    width: 100%;
+}
+
+input[type= "email"]{
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.last_line{
+    font-size: 0.5rem;
+
+}
+
+ a {
+    font-size: 0.5rem;
+    color: blue;
+}
+
+#passwordError{
+    position: absolute;
+    top: 70px;
+}
+
+label{
+    position: relative;
+}
+
+ a:hover {
+    color: rgb(4, 12, 112);
+}
+
+
+/* Extra small devices (phones, portrait mode) */
+@media screen and (max-width: 576px) {
+    *{
+        font-size: 18px;
+    }
+}
+
+/* Small devices (tablets, portrait mode) */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    *{
+        font-size: 21px;
+    }
+}
+
+/* Medium devices (small laptops) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    *{
+        font-size: 25px;
+    }
+}
+
+/* Large devices (laptops and desktops) */
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+    *{
+        font-size: 27px;
+    }
+}
+
+
+

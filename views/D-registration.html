@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="/css/registration.css">
+</head>
+<body>
+    <div>
+        <h1>Doctor registration form</h1> 
+        <form id="D-registrationform">
+            <label for="username">Name:</label>
+            <input type="text" id="username"  name="username" required>
+           
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+     
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+
+            <label for="confirmpassword">Confirm password:</label>
+            <input type="password" id="confirmpassword" name="confirmpassword" required>
+            <span id="confirmpasswordError" class="error"></span>
+
+           
+            <label for="specialization">Specialization:</label>
+            <select name="specialization" id="specialization" required>
+                <option value=" " disabled selected>Select specialization</option>
+                <option value="Consultant doctor">Consultant doctor</option>
+                <option value="Radiography">Radiography</option>
+                <option value="Neurology">Neurology</option>
+                <option value="Orthopedics">Orthopedics</option>
+                <option value="Optician">Optician</option>
+                <option value="Dentist">Dentist</option>
+            </select>
+
+            <label for="t&c">Terms and condition:</label>
+            <input type="checkbox" id="t&c" >
+            <span id="messageError" class="error"></span>
+
+            <input type="submit" value="Register"> 
+            <p class="login">Already has an account? <a href="/auth/doctorLogin">Login</a></p>
+        </form>
+        
+    </div>  
+    <script src="/js/D-registeration.js"></script>
+</body>
+</html>
+    
+   
+
